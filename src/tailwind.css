@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*noinspection CssUnresolvedCustomProperty*/
+    --background: var(--system-color-1);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --foreground: var(--system-color-12);
+
+     /*noinspection CssUnresolvedCustomProperty*/
+    --card: var(--system-color-6);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --card-foreground: var(--system-color-11);
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --popover: var(--system-color-2);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --popover-foreground: var(--system-color-11);
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary: var(--system-color-9);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary-1: var(--system-color-4);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary-2: var(--system-color-7);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary-dark: var(--system-color-1);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary-foreground: var(--system-color-12);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --primary-1-foreground: var(--system-color-11);
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --secondary: var(--system-color-3);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --secondary-1: var(--system-color-5);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --secondary-foreground: var(--system-color-11);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --secondary-1-foreground: var(--system-color-12);
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --muted: var(--system-color-3);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --muted-foreground: var(--system-color-11);
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --accent: var(--system-color-3);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --accent-foreground: var(--system-color-11);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 72% 51%;
+
+    /*noinspection CssUnresolvedCustomProperty*/
+    --border: var(--system-color-6);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --input: var(--system-color-2);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --input-placeholder: var(--system-color-6);
+    /*noinspection CssUnresolvedCustomProperty*/
+    --ring: var(--system-color-4);
+
+    --radius: 6px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans h-screen;
+  }
+
+  :root {
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+.indeterminate {
+  background-image: linear-gradient(
+    45deg,
+    hsl(var(--primary)) 25%,
+    hsl(var(--primary-2)) 25%,
+    hsl(var(--primary-2)) 50%,
+    hsl(var(--primary)) 50%,
+    hsl(var(--primary)) 75%,
+    hsl(var(--primary-2)) 75%,
+    hsl(var(--primary-2)) 100%
+  );
+  background-size: 24px 24px;
+}
